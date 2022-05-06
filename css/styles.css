@@ -32,6 +32,15 @@
 	padding: 0px;
 	margin: 0px;
 }
+.foto {
+	padding-right: 30px;
+  }
+.corpo {
+	margin: 20px;
+  }
+.coluna {
+	padding-top: 5px;
+  }
 /* Fim estilo para o corpo da pagina aovivo */
 /* Estilo css do rodapé */
 .fundo {
@@ -74,3 +83,7 @@
 	color: black;
   }
 /* FIM Estilo do rodapé */
+.foto1{
+	width: 700px;
+	height: auto;
+}
