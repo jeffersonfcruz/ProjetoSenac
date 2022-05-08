@@ -23,6 +23,9 @@
 	text-shadow: 2px 2px black;
 	font-style: italic;
 }
+.manchete div {
+	border-radius: 5px ;
+}
 /* FIM Estilo para a pagina index */
 /* estilo para o corpo da pagina aovivo */
 .aovivo {
@@ -36,7 +39,7 @@
 	padding-right: 30px;
   }
 .corpo {
-	margin: 20px;
+	margin: 5px;
   }
 .coluna {
 	padding-top: 5px;
@@ -55,15 +58,15 @@
 }
 .fundo2 {
 	background-color: green;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
-  margin: 0px;
-  padding: 0px;
+	color: rgb(0, 0, 0);
+  	line-height: 1;
+  	text-align: left;
+  	margin: 0px;
+  	padding: 0px;
 }
 .fundo2 p{
 	font-size: 14pt;
-	padding: 15px;
+	padding-top: 5px;
 }
 .fundo2 a {
   text-decoration: none;
@@ -86,4 +89,16 @@
 .foto1{
 	width: 700px;
 	height: auto;
+}
+.dh1 {
+	margin-left: 12px;
+	margin-right: 12px;
+	background-color: rgb(0, 128, 0);
+	color: white;
+}
+.main {
+	margin: 10px;
+}
+.main div {
+	border-radius: 5px ;
 }
