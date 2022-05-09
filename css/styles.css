@@ -177,3 +177,8 @@
 .linha {
   padding-top: 10px;
 }
+.index {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
