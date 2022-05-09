@@ -4,11 +4,10 @@ function cadastrar() {
 	  .then((dados) => {
 		dados.output.map((item) => {
 		  var div = `<div id=item>
-		  <h2>${item.8}</h2>
-		  <h3>${item.8}</h3>
-		  <h3>${item.8}</h3>
-		  <h3>${item.8}</h3>
-		  <h3>${item.8}</h3>
+		  <h2>${item.name}</h2>
+		  <h3>${item.tel}</h3>
+		  <h3>${item.email}</h3>
+		  <h3>${item.end}</h3>
 		  </div>
 		  `;
 		  document.getElementsByTagName("main")[0].innerHTML += div;
@@ -17,11 +16,10 @@ function cadastrar() {
   }
   
   function cadastrar() {
-	let  = document.getElementsByTagName("input")[0];
-	let  = document.getElementsByTagName("input")[1];
-	let  = document.getElementsByTagName("input")[2];
-	let  = document.getElementsByTagName("input")[3];
-	let  = document.getElementsByTagName("input")[4];
+	let name = document.getElementsByTagName("input")[0];
+	let tel = document.getElementsByTagName("input")[1];
+	let email = document.getElementsByTagName("input")[2];
+	let end = document.getElementsByTagName("input")[3];
   
 	fetch("http://localhost:5000/api/cliente/cadastrar", {
 	  method: "POST",
@@ -30,12 +28,10 @@ function cadastrar() {
 		"content-type": "application/json",
 	  },
 	  body: JSON.stringify({
-		8: 8.value,
-		8: 8.value,
-		8: 8.value,
-		8: 8.value,
-		8: 8.value,
-		8: 8.value,
+		name: name.value,
+		tel: tel.value,
+		email: email.value,
+		end: end.value,
 	  }),
 	})
 	  .then((resultado) => resultado.json())
@@ -43,12 +39,10 @@ function cadastrar() {
 		alert(`${dados.output}\n${dados.payload}`);
   
 		//Limpar o formulário
-		8.value = "";
-		8.value = "";
-		8.value = "";
-		8.value = "";
-		8.value = "";
-		8.value = "";
+		name.value = "";
+		tel.value = "";
+		email.value = "";
+		end.value = "";
 	  })
 	  .catch((err) => console.error(err));
 	window.location.reload();
