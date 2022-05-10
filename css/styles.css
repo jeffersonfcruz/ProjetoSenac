@@ -53,7 +53,7 @@
 .fundo {
   background-color: green;
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 .fundo a {
   text-decoration: none;
@@ -71,6 +71,7 @@
 .fundo2 p {
   font-size: 14pt;
   padding-top: 5px;
+  text-align: center;
 }
 .fundo2 a {
   text-decoration: none;
